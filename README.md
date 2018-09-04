@@ -7,9 +7,10 @@ def recur_factorial(n):
    else:
        return n*recur_factorial(n-1)
 num = 7
-if num < 0:
-   print("Sorry, factorial does not exist for negative numbers")
+if num > 0:
+   print("The factorial of",num,"is",recur_factorial(num))
+   
 elif num == 0:
    print("The factorial of 0 is 1")
 else:
-   print("The factorial of",num,"is",recur_factorial(num))
+  print("Sorry, factorial does not exist for negative numbers")
